@@ -1,6 +1,6 @@
 import * as core from "@actions/core";
 import { deploy } from "@gryphonDev1/ftp-deploy";
-import { IFtpDeployArguments } from "@gryphonDDev1/ftp-deploy/dist/types";
+import { IFtpDeployArguments } from "@gryphonDev1/ftp-deploy/dist/types";
 import { optionalInt, optionalProtocol, optionalString, optionalBoolean, optionalStringArray, optionalLogLevel, optionalSecurity } from "./parse";
 
 async function runDeployment() {

@@ -1,6 +1,6 @@
 {
   "name": "ftp-deploy-action",
-  "version": "4.1.0",
+  "version": "4.1.3",
   "private": true,
   "description": "Automate deploying websites and more with this GitHub action",
   "main": "dist/index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SamKirkland/FTP-Deploy-Action.git"
+    "url": "git+https://github.com/gryphonDev1/FTP-Deploy-Action.git"
   },
   "keywords": [
     "ftp",
@@ -23,7 +23,7 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.4.0",
-    "@gryphoneDev1/ftp-deploy": "^0.0.1",
+    "@gryphonDev1/ftp-deploy": "gryphonDev1/ftp-deploy",
     "@types/jest": "^26.0.23",
     "jest": "^27.0.5",
     "ts-jest": "^27.0.3",

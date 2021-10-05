@@ -23,7 +23,7 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.4.0",
-    "@gryphonDev1/ftp-deploy": "gryphonDev1/ftp-deploy",
+    "@gryphonDev1/ftp-deploy": "0.0.3",
     "@types/jest": "^26.0.23",
     "jest": "^27.0.5",
     "ts-jest": "^27.0.3",

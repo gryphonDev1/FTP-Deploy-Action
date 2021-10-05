@@ -2386,7 +2386,11 @@ class FTPSyncProvider {
             }
             // upload new files
             for (const file of diffs.upload.filter(item => item.type === "file").filter(item => item.name !== this.stateName)) {
-                yield this.uploadFile(file.name, "upload");
+                try {
+			yield this.uploadFile(file.name, "upload");
+		} catch ( e ) {
+			console.log("error uploading file " .. file.name);
+		}
             }
             // replace new files
             for (const file of diffs.replace.filter(item => item.type === "file").filter(item => item.name !== this.stateName)) {

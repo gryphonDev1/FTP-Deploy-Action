@@ -2395,7 +2395,11 @@ class FTPSyncProvider {
             // replace new files
             for (const file of diffs.replace.filter(item => item.type === "file").filter(item => item.name !== this.stateName)) {
                 // note: FTP will replace old files with new files. We run replacements after uploads to limit downtime
+		    try {
                 yield this.uploadFile(file.name, "replace");
+			    } catch ( e ) {
+			console.log("error uploading file " + file.name);
+		}
             }
             // delete old files
             for (const file of diffs.delete.filter(item => item.type === "file")) {

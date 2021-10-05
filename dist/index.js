@@ -2389,7 +2389,7 @@ class FTPSyncProvider {
                 try {
 			yield this.uploadFile(file.name, "upload");
 		} catch ( e ) {
-			console.log("error uploading file " .. file.name);
+			console.log("error uploading file " + file.name);
 		}
             }
             // replace new files
